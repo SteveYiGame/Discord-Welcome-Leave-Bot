@@ -1,3 +1,5 @@
+[README](README.md) | [中文文檔](README_zh.md)
+
 ## What is it?
 
 This is a Discord Bot 
