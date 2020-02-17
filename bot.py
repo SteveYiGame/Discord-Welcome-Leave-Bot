@@ -11,13 +11,13 @@ async def on_ready():
 async def on_member_join(member):
     print(f'{member}加入了伺服器!')
     channel = bot.get_channel(輸入要進入的頻道ID)
-    await channel.send(F'@{member} 加入了伺服器!')
+    await channel.send(F'{member.mention} 加入了伺服器!')
 
 @bot.event
 async def on_member_remove(member):
     print(f'{member}離開了伺服器!')
     channel = bot.get_channel(輸入要離開的頻道ID)
-    await channel.send(F'@{member} 離開了伺服器!')
+    await channel.send(F'{member.mention} 離開了伺服器!')
 
 @bot.command()
 async def ping(ctx):
