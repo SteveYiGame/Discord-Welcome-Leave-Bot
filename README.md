@@ -1,1 +1,1 @@
-# Test-Bot-SteveYi
+# Discord Welcome & Leave Bot
