@@ -1,8 +1,10 @@
-這是什麼
+## What is it?
 
-這是一個DISCORD機器人 
-當使用者加入或離開伺服器時候，會在指定頻道顯示
+This is a Discord Bot 
+When user joined or left the server, the message will be appeared on channel.
 
-修改config.json中的join_channel, leave_channel, Token
+## Installation
 
-使用Python 3.8
+Edit join_channel, leave_channel, Token in config.json
+
+Current version: python v3.8
