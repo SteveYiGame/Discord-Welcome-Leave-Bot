@@ -9,19 +9,19 @@ bot = commands.Bot(command_prefix='!')
 
 @bot.event
 async def on_ready():
-    print('>>機器人已啟動<<')
+    print('>>Bot is Online!<<')
 
 @bot.event
 async def on_member_join(member):
-    print(f'{member.id}, {member}加入了伺服器!')
+    print(f'{member.id}, {member}Join the server!')
     channel = bot.get_channel(date['join_channel'])
-    await channel.send(F'<@{member.id}> 加入了伺服器!')
+    await channel.send(F'<@{member.id}> Join the server!')
 
 @bot.event
 async def on_member_remove(member):
-    print(f'{member.id}, {member}離開了伺服器!')
+    print(f'{member.id}, {member} leave the server!')
     channel = bot.get_channel(date['leave_channel'])
-    await channel.send(F'<@{member.id}> 離開了伺服器!')
+    await channel.send(F'<@{member.id}> leve the server!')
 
 @bot.command()
 async def ping(ctx):
